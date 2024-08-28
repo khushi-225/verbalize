@@ -1,0 +1,11 @@
+.flexContainer {
+  color: aliceblue;
+  display: flex;
+  justify-content: space-between; /* Adjusts space between the two components */
+  align-items: flex-start; /* Aligns them at the top */
+  gap: 20px; /* Adds some space between the blocks */
+  margin-top: 20px;
+  background-color: #333333; /* Dark background color */
+  padding: 20px; /* Optional: adds some padding around the flex container */
+  border-radius: 8px; /* Optional: rounded corners */
+}

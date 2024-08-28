@@ -1,0 +1,36 @@
+.detailsContainer {
+  width: 700px; /* Consistent width */
+  height: 600px; /* Consistent height */
+  border: 2px solid rgb(255, 165, 0); /* Lighter border color for dark mode */
+  border-radius: 10px; /* Rounded corners */
+  background-color: #1e1e1e; /* Dark background color */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4); /* Darker shadow for better contrast */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the content */
+  padding: 20px; /* Add padding inside the container */
+  margin-top: 20px; /* Margin on top */
+  color: #fff; /* Ensure text color contrasts with dark background */
+  text-align: center; /* Center-align text */
+}
+
+/* Optional: Add responsive design if needed */
+@media (max-width: 768px) {
+  .detailsContainer {
+    width: 90%; /* Adjust width for smaller screens */
+    height: auto; /* Allow height to adjust based on content */
+  }
+}
+
+.placeholderText {
+  font-size: 1rem; /* Adjust as needed */
+  color: #bbb; /* Lighter placeholder text color for dark mode */
+}
+
+
+.pieChartContainer {
+  margin-top: 20px; /* Add some spacing above the chart */
+  display: flex;
+  justify-content: center; /* Center the chart */
+  align-items: center;
+}

@@ -1,0 +1,66 @@
+/* From Uiverse.io by MuhammadHasann */
+.generateButton {
+  position: relative;
+  width: 135px;
+  height: 47px;
+  background: transparent;
+  font-size: 17px;
+  font-weight: 900;
+  color: #ffffff;
+  border: 3px solid #f39923;
+  border-radius: 12px;
+  text-align: center;
+  line-height: 47px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  outline: none;
+}
+
+.generateButton::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 135px;
+  height: 47px;
+  background-color: #f5ae51;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.generateButton::after {
+  content: "Generate";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 135px;
+  height: 47px;
+  background-color: transparent;
+  font-size: 17px;
+  font-weight: 900;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+  z-index: 2;
+}
+
+.generateButton:hover {
+  box-shadow: inset 0px 0px 25px #1479EA;
+}
+
+.generateButton:active {
+  transform: scale(0.95);
+}
+
+/* Hover effects for additional visual flair */
+.generateButton:hover::before {
+  background-color: #f5ae51;
+}
+
+.generateButton:hover::after {
+  content: "Generating...";
+}
